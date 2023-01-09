@@ -7,8 +7,7 @@ st.set_page_config(page_title = 'Tempus')
 st.header("Tempus Dashboard")
 
 #Read data
-csv_file = 'save_csv.csv'
-df = pd.read_csv(csv_file)
+
 df2 = pd.read_csv('patient_result.csv')
 
 ages = df2['Age'].unique().tolist()

@@ -9,7 +9,6 @@ st.header("Tempus Dashboard")
 #Read data
 
 df2 = pd.read_csv('patient_result.csv')
-
 ages = df2['Age'].unique().tolist()
 # drugs = df2['drugClass'].unique().tolist()
 filters = ['therapy', 'drugClass', 'tissue', 'variant', 'evidenceType', 'association', 'status', 'url', 'pubMedId', 'fdaApproved', 'isOnLabel']

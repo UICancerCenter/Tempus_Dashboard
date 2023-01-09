@@ -21,6 +21,8 @@ for i in filters:
 select_filters = st.multiselect(f'', filters)
 my_slot2 = st.empty()
 
+#select_filters = ['therapy']
+
 age_selection = st.slider('Age:', min_value = min(ages), max_value = max(ages), value=(min(ages), max(ages)))
 filter = (df2['Age'].between(*age_selection)) 
 # num_cases = df2[filter].shape[0]
